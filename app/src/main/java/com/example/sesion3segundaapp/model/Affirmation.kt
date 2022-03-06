@@ -1,3 +1,10 @@
 package com.example.sesion3segundaapp.model
 
-data class Affirmation(val stringResourceId: Int)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+import com.example.sesion3segundaapp.R
+
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+)
